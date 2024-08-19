@@ -1,0 +1,423 @@
+html,body{
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:mainFont ;
+    src: url(/fonts/Geist-Regular-BF6569491e3eff1.otf);
+}
+h1, h2, h3, h4, h5, a, p, ul, li,button{
+    font-family:mainFont;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    margin: 0;}
+
+header{
+        display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         background: black;
+         width:100%;
+    }
+
+.logo{
+        margin-right: auto;
+        width: 12rem;
+        max-height: 100%;
+    }
+.nav_links{
+        list-style: none;
+    }
+.nav_links li{
+        display: inline-block;
+        padding: 0 4rem;
+    }
+.nav_links li a{
+        color: white;
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+.nav_links li a:hover{
+        color:  rgb(255, 89, 89);
+        text-decoration: none;
+    }
+.nav_links img{
+    height: 100%;
+    width: 1.25rem;
+    margin-right: 2rem;
+}
+.index_picture{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    margin: 0;
+}
+.index_picture img{
+    width: 100%;
+    height: 100%;
+}
+.index_title{
+    position: absolute;
+    bottom: 30%;
+    left: 7.5%;
+}
+
+.index_title h1{
+    font-size: 30px;
+}
+.index-title2{
+    position: absolute;
+    left: 7%;
+    bottom: 15%;
+}
+.index-title2 h1{
+    font-size: 90px;
+    color:rgb(255, 89, 89);
+    font-weight:bolder;
+    letter-spacing: 5px;
+}
+.sub-section{
+    height:75vh;
+    width: 100%;
+}
+
+.sub-section h1{
+    text-align: center;
+    padding-top: 5rem;
+    color: black;
+    font-weight: bold;
+
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:2rem 0;
+    height:70%;
+}
+.card{
+    width: 18rem;
+    height: 28rem;
+    overflow: hidden;
+    margin: 2rem;
+    height:100%;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.card-content{
+    padding: 3rem;
+}
+.card-content h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: bold;
+}
+.card-content p{
+    color: #787878;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+.card-content .btn:hover{
+    background-color:rgb(243, 145, 145);
+}
+.hoodie{
+    width: 100%;
+    height:80vh;
+    padding:3rem 0;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+.hoodie img{
+    width: 80%;
+    height: 100%;
+}
+.new-release{
+    position: absolute;
+    right: 30rem;
+    bottom: 15rem;
+    width: 20%;
+    height: 30%;
+}
+.new-release h1{
+    color: white;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.new-release h4{
+    font-weight: 20;
+    text-align: center;
+}
+.new-release .btn{
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-color: white;
+    background: transparent;
+    font-weight: bold;
+    padding: 0.5rem, 0.5rem;
+}
+.new-release .btn:hover{
+    background-color:rgb(243, 145, 145);
+}
+.footer{
+    height: 4vh;
+    width: 100vw;
+    background-color: black;
+    padding: 1.5rem 2rem 0.25rem 3rem;
+}
+.top-footer{
+    min-height: 20%;
+}
+.bottom-footer{
+    width: 100%;
+    height: auto;
+}
+.bottom-footer h3{
+    font-size: 15px;
+    font-weight:lighter;
+    color: rgb(99, 99, 99);
+}
+
+/*Breakpoint for 1920*/
+
+@media (max-width:1920px){
+    .sub-section{
+        height: 70vh;
+    }
+    .new-release{
+        right:25rem;
+        bottom: 20rem;
+    }
+    .index_title {
+        bottom:32%;
+    }
+}
+/*Breakpoint for 1366*/
+@media (max-width:1366px){
+    .index_title h1{
+        font-size: 25px;
+    }
+    .index-title2 h1{
+        font-size: 70px;
+    }
+    header{
+        max-height:10vh;
+    }
+    .nav_links li{
+        padding: 0 2rem;
+        font-size: 15px;
+    }
+    .sub-section{
+        height: 80vh;
+    }
+    .hoodie{
+        height: 60vh;
+    }
+    .new-release{
+        right: 17.5rem;   
+        bottom: 9rem; 
+        height: 40%;
+    }
+    .new-release h1{
+        font-size: 22.5px;
+    }
+    .new-release h4{
+        font-size: 10px;
+    }
+    .new-release .btn{
+        font-size: 10px;
+        left: 32.5%;
+       
+    }
+    .index_title{
+        bottom: 27%;
+    }
+    .index_title h1{
+        font-size: 20px;
+    }
+    .index-title2 h1{
+        font-size: 55px;
+    }
+
+}
+
+
+
+/*Breakpoint for 1280*/
+@media (max-width:1280px){
+    header{
+        max-height:10vh;
+    }
+    .nav_links li{
+        padding: 0 2rem;
+        font-size: 15px;
+    }
+    .sub-section{
+        height: 80vh;
+    }
+
+    .hoodie{
+        height: 60vh;
+    }
+    .new-release{
+        right: 17.5rem;   
+        bottom: 9rem; 
+        height: 40%;
+    }
+    .new-release h1{
+        font-size: 22.5px;
+    }
+    .new-release h4{
+        font-size: 10px;
+    }
+    .new-release .btn{
+        font-size: 10px;
+        left: 32.5%;
+        
+    }
+    .index_title{
+        bottom: 27%;
+    }
+    .index_title h1{
+        font-size: 20px;
+    }
+    .index-title2 h1{
+        font-size: 55px;
+    }
+}
+/*Breakpoint for 1200*/
+@media (max-width:1200px){
+    header{
+        max-height:10vh;
+    }
+    .nav_links li{
+        padding: 0 2rem;
+        font-size: 15px;
+    }
+    .sub-section{
+        height: 80vh;
+    }
+
+    .hoodie{
+        height: 60vh;
+    }
+    .new-release{
+        right: 17.5rem;   
+        bottom: 9rem; 
+        height: 40%;
+    }
+    .new-release h1{
+        font-size: 22.5px;
+    }
+    .new-release h4{
+        font-size: 10px;
+    }
+    .new-release .btn{
+        font-size: 10px;
+        left: 32.5%;
+        
+    }
+    .index_title{
+        bottom: 27%;
+    }
+    .index_title h1{
+        font-size: 20px;
+    }
+    .index-title2 h1{
+        font-size: 55px;
+    }
+}
+/*Breakpoint for 1024*/
+@media (max-width:1024px){
+    body{
+        width: 1060px;
+    }
+    header{
+        max-height:8vh;
+    }
+    .logo{
+        width: 8rem;
+    }
+    .nav_links li{
+        padding: 0 2rem;
+        font-size: 12px;
+    }
+    .nav_links img{
+        width: 0.95rem;
+        margin-right: 1.25rem;
+    }
+    .sub-section{
+        height: 80vh;
+    }
+
+    .hoodie{
+        height: 50vh;
+    }
+    .new-release{
+        right: 15rem;   
+        bottom: 9rem; 
+        height: 35%;
+    }
+    .new-release h1{
+        font-size: 18px;
+    }
+    .new-release h4{
+        font-size: 8px;
+    }
+    .new-release .btn{
+        font-size: 8px;
+        left: 32.5%;
+        
+    }
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:2rem 0;
+        height:60%;
+    }
+    .card{
+        width: 13rem;
+        height: 18rem;
+        overflow: hidden;
+        margin: 2rem;
+        height:100%;
+    }
+    .index_title{
+        bottom: 27%;
+    }
+    .index_title h1{
+        font-size: 20px;
+    }
+    .index-title2 h1{
+        font-size: 55px;
+    }
+    .card-content .btn{
+        display: inline-block;
+        padding: 4px 10px;
+        background-color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+    }
+}
